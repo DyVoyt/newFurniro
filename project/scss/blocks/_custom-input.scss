@@ -1,0 +1,19 @@
+.custom-input{
+
+    &__field{
+        border: none;
+        border-bottom: 1px solid $color-black;
+
+        &:focus-visible{
+            outline: none;
+        }
+    }
+
+    &__button{
+        border: none;
+        border-bottom: 1px solid $color-black;
+        background-color: transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

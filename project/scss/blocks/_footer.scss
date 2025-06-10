@@ -1,0 +1,108 @@
+.footer{
+
+    .container{
+        padding: 0;
+    }
+
+    &__heading{
+        margin: 0;
+    }
+
+    &__wrapper{
+        display: flex;
+        padding: 0 100px;
+        border-top: 1px solid $color-black-light;
+        flex-direction: column;
+    }
+
+    &__content{
+        display: flex;
+        padding: 48px 0;
+    }
+
+    &__location{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 136px 0 0;
+        max-width: 285px;
+    }
+
+    &__homelink{
+        color: $color-black;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    &__location-text{
+        color: $color-Nobel;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        max-width: 68px;
+        margin: 0 144px 0 0;
+    }
+
+    &__nav{
+        gap: 46px;
+        flex-direction: column;
+    }
+
+    &__links-heading{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: $color-Nobel;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__help-heading{
+        margin: 0;
+        color: $color-Nobel;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__help{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        margin: 0 72px 0 0;
+    }
+
+    &__newsteller{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    &__newsteller-heading{
+        margin: 0;
+        color: $color-Nobel;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__form{
+        display: flex;
+        gap: 11px;
+    }
+
+    &__copyright{
+        padding: 36px 0 38px;
+        margin: 0;
+        border-top: 1px solid $color-black-light;
+        display: flex;
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 400;
+    }
+}
