@@ -1,0 +1,49 @@
+.hero{
+    margin: 0 0 56px;
+    position: relative;
+    height: calc(100vh - 100px);
+    background-image: url('../images/home/hero/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(min-resolution: 2dppx){
+        background-image: url('../images/home/hero/hero@2x.jpg');
+    }
+
+    &__content{
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        max-width: 643px;
+        min-height: 443px;
+        padding: 62px 43px 37px 39px;
+        background-color: $color-Old-Lace;
+    }
+
+   &__label-text{
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.03em;
+      color: $color-Night-Rider;
+      margin: 0 0 4px;
+   }
+
+   &__heading{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 65px;
+    color: $color-Hokey-Pokey;
+    margin: 0 0 17px;
+   }
+
+   &__text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-Night-Rider;
+    margin: 0 0 46px;
+   }
+}

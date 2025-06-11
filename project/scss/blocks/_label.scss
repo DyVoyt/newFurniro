@@ -1,0 +1,25 @@
+.label{
+    position: absolute;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    right: 24px;
+    color: $color-white; 
+    background-color: $color-Geraldine;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    pointer-events: none;
+
+    &--new{
+        background-color: $color-Light-Sea-Green;
+    }
+
+    &--none{
+        display: none;
+    }
+}

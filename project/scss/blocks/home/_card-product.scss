@@ -1,0 +1,112 @@
+.card-product{
+    position: relative;
+    background-color: $color-Solitude;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover{
+        .card-product__add-cart{
+            display: flex;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $color-grey;
+            inset: 0;
+            opacity: 0.72;
+        }
+    }
+
+    &__information{
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 285px;
+        
+    }
+
+    &__heading{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $color-grey;
+        margin: 0;
+        
+    }
+
+    &__description{
+        color: $color-Suva-Grey;
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__prices{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__price{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+
+        &--old{
+            color: $color-Dark-Gray;
+            font-weight: 400;
+            font-size: 16px;
+            position: relative;
+            display: none;
+
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: $color-Dark-Gray;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__add-cart{
+        display: none;
+        position: absolute;        
+        flex-direction: column;
+        gap: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        z-index: 5;
+    }
+
+    &__icons-wrapper{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    &__action{
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__add-text{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: $color-white;
+    }
+}

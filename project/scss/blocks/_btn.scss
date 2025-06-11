@@ -1,0 +1,28 @@
+.btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 25px 72px;
+    background-color: $color-Hokey-Pokey;
+    text-transform: uppercase;
+    color: $color-white;
+    border: transparent;
+    cursor: pointer;
+
+    &--inner{
+        padding: 12px 74px 12px 82px;
+        text-align: center;
+        color: $color-Hokey-Pokey;
+        background-color: transparent;
+        border: 1px solid $color-Hokey-Pokey;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;        
+    }
+
+    &--cart{
+        padding: 12px 52px 12px 59px;
+        border: transparent;
+        background-color: $color-white;
+    }
+}
