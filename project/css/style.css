@@ -387,7 +387,6 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
 }
 
 a {
@@ -595,6 +594,7 @@ a {
   padding: 12px 52px 12px 59px;
   border: transparent;
   background-color: #FFFFFF;
+  text-transform: unset;
 }
 
 .label {
@@ -817,4 +817,84 @@ a {
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
+}
+
+.rooms {
+  background-color: #FCF8F3;
+  min-height: 616px;
+  padding: 44px 0;
+}
+.rooms__wrapper {
+  display: flex;
+  gap: 42px;
+  overflow: auto;
+  flex-wrap: nowrap;
+  margin: 0 -102px 0 0;
+  padding: 0 -102px 0 0;
+}
+.rooms__wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.rooms__information {
+  min-width: 422px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rooms__gallery {
+  display: grid;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  grid-template-columns: 404px repeat(2, 372px);
+  grid-template-rows: 486px 96px;
+}
+.rooms__rooms__image--large {
+  grid-row: span 2;
+  height: 528px;
+}
+.rooms__buttons {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex;
+  gap: 11px;
+  padding: 40px 0 29px;
+}
+.rooms__button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+.rooms__button::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+  top: 8px;
+  left: 8px;
+}
+.rooms__button--inner::before {
+  background-color: #B88E2F;
+}
+.rooms__button--inner::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #B88E2F;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  inset: 0;
+}
+.rooms__btn {
+  width: 176px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 12px 36px;
+  text-transform: unset;
 }/*# sourceMappingURL=style.css.map */
