@@ -29,4 +29,10 @@
     <symbol id="like-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8"/>
     </symbol>
+    <symbol id="right-scroll-icon" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.00006 1L8.00006 8L1.00006 15" stroke="#B88E2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="right-page-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 12H3M21 12L15 6M21 12L15 18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>

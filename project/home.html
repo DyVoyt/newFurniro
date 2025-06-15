@@ -88,13 +88,22 @@
                     <p class="type-room__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <ul class="type-room__gallery">
                         <li class="type-room__gallery-item">
-                              <img class="type-room__img" src="images/home/type-room/dining.jpg" srcset="images/home/type-room/dining@2x.jpg 2x"  alt="фото карточка комнаты" width="381" height="480">
+                             <figure class="type-room__picture">
+                                 <img class="type-room__img" src="images/home/type-room/dining.jpg" srcset="images/home/type-room/dining@2x.jpg 2x"  alt="фото карточка комнаты" width="381" height="480">
+                                 <figcaption class="type-room__img-description">Dining</figcaption>
+                             </figure>
                         </li>
                         <li class="type-room__gallery-item">
-                            <img class="type-room__img" src="images/home/type-room/living.jpg" srcset="images/home/type-room/living@2x.jpg 2x" alt="фото карточка комнаты" width="381" height="480">
+                            <figure class="type-room__picture">
+                                <img class="type-room__img" src="images/home/type-room/living.jpg" srcset="images/home/type-room/living@2x.jpg 2x" alt="фото карточка комнаты" width="381" height="480">
+                                <figcaption class="type-room__img-description">Living</figcaption>
+                            </figure>
                         </li>
                         <li class="type-room__gallery-item">
-                            <img class="type-room__img" src="images/home/type-room/badroom.jpg" srcset="images/home/type-room/badroom@2x.jpg 2x" alt="фото карточка комнаты" width="381" height="480">
+                           <figure class="type-room__picture">
+                             <img class="type-room__img" src="images/home/type-room/badroom.jpg" srcset="images/home/type-room/badroom@2x.jpg 2x" alt="фото карточка комнаты" width="381" height="480">
+                             <figcaption class="type-room__img-description">Bedroom</figcaption>
+                           </figure>
                         </li>
                     </ul>
                 </div>
@@ -416,15 +425,37 @@
                         <button class="btn rooms__btn">Explore More</button>
                     </div>
                     <div class="rooms__gallery">
-                        <img class="rooms__image rooms__image--large" src="images/home/rooms/image-1.jpg" srcset="images/home/rooms/image-1@2x.jpg 2x" alt="room photo" width="404" height="582">
-                        <img class="rooms__image" src="images/home/rooms/image-2.jpg" srcset="images/home/rooms/image-2@2x.jpg 2x" alt="room photo" width="372" height="486">
-                        <img class="rooms__image" src="images/home/rooms/image-2.jpg" srcset="images/home/rooms/image-3@2x.jpg 2x" alt="room phote" width="372" height="486">
+                        <div class="rooms__gallery-card">
+                            <img class="rooms__image rooms__image--large" src="images/home/rooms/image-1.jpg" srcset="images/home/rooms/image-1@2x.jpg 2x" alt="room photo" width="404" height="582">
+                            <div class="rooms__gallery-wrapper">
+                                <div class="rooms__gallery-cart">
+                                    <p class="rooms__gallery-text">01 - Bed Room</p>
+                                    <p class="rooms__gallery-heading">Inner Peace</p>
+                                </div>
+                                <button class="btn rooms__gallery-btn">
+                                    <svg class="rooms__icon-page" width="24" height="24" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#right-page-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                       <div class="rooms__gallery-card">
+                         <img class="rooms__image" src="images/home/rooms/image-2.jpg" srcset="images/home/rooms/image-2@2x.jpg 2x" alt="room photo" width="372" height="486">
+                       </div>
+                        <div class="rooms__gallery-card">
+                            <img class="rooms__image" src="images/home/rooms/image-2.jpg" srcset="images/home/rooms/image-3@2x.jpg 2x" alt="room phote" width="372" height="486">
+                        </div>
                         <div class="rooms__buttons">
                             <button class="rooms__button rooms__button--inner" type="button" aria-label="показать следующую подборку"></button>
                             <button class="rooms__button" type="button" aria-label="показать следующую подборку"></button>
                             <button class="rooms__button" type="button" aria-label="показать следующую подборку"></button>
                             <button class="rooms__button" type="button" aria-label="показать следующую подборку"></button>
                         </div>
+                        <button class="rooms__right-button">
+                            <svg class="rooms__scroll-icon" width="9" height="16" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#right-scroll-icon"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
